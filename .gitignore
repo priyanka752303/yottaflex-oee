@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# generated datasets (the full dataset is ~300 MB; regenerate with the command in README)
+out/
