@@ -1,0 +1,13 @@
+reason_code,description,category,oee_loss_bucket,is_planned,requires_annotation,effective_from
+DR-BRK-TEA,Scheduled tea break,PLANNED_STOP,NONE,true,false,2025-01-01
+DR-BRK-MEAL,Scheduled meal break,PLANNED_STOP,NONE,true,false,2025-01-01
+DR-PM,Preventive maintenance (planned),PLANNED_STOP,NONE,true,false,2025-01-01
+DR-NOSCHED,No production scheduled (plant closed),PLANNED_STOP,NONE,true,false,2025-01-01
+DR-CO,Changeover / setup between orders,SETUP,AVAILABILITY,false,false,2025-01-01
+DR-MECH,Mechanical breakdown,UNPLANNED_STOP,AVAILABILITY,false,true,2025-01-01
+DR-ELEC,Electrical / control fault,UNPLANNED_STOP,AVAILABILITY,false,true,2025-01-01
+DR-MAT,Material shortage / starved,UNPLANNED_STOP,AVAILABILITY,false,true,2025-01-01
+DR-QH,Quality hold,UNPLANNED_STOP,AVAILABILITY,false,true,2025-01-01
+DR-OPR,No operator available,UNPLANNED_STOP,AVAILABILITY,false,true,2025-01-01
+DR-MICRO,"Minor stop (< threshold), auto-classified",MINOR_STOP,PERFORMANCE,false,false,2025-01-01
+DR-UNASSIGNED,Stop not yet annotated,UNKNOWN,AVAILABILITY,false,true,2025-01-01

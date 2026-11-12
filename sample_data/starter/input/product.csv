@@ -1,0 +1,7 @@
+product_id,product_name,product_family,unit_of_measure,status,effective_from
+PRD-001,Gearbox housing type A,Gearbox housings,EA,ACTIVE,2022-01-01
+PRD-002,Gearbox housing type B,Gearbox housings,EA,ACTIVE,2022-01-01
+PRD-003,Gearbox housing type C,Gearbox housings,EA,ACTIVE,2022-01-01
+PRD-004,Brake disc type A,Brake discs,EA,ACTIVE,2022-01-01
+PRD-005,Brake disc type B,Brake discs,EA,ACTIVE,2022-01-01
+PRD-006,Brake disc type C,Brake discs,EA,ACTIVE,2022-01-01

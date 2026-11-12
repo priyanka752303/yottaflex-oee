@@ -1,0 +1,164 @@
+{
+  "anomaly_detection": {
+    "OVERLAPPING_STATE": {
+      "injected": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "missed": [],
+      "unexpected": []
+    },
+    "COUNT_DECREASE_NO_CORRECTION": {
+      "injected": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "missed": [],
+      "unexpected": []
+    },
+    "SCRAP_EXCEEDS_TOTAL": {
+      "injected": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "missed": [],
+      "unexpected": []
+    },
+    "WRONG_IDEAL_CYCLE_TIME": {
+      "injected": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "missed": [],
+      "unexpected": []
+    },
+    "DOWNTIME_OVERLAPS_BREAK": {
+      "injected": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "missed": [],
+      "unexpected": []
+    }
+  },
+  "oee_accuracy": {
+    "machine_shifts": 252,
+    "exact_match": 246,
+    "differs_due_to_unresolvable_anomaly": 6,
+    "unexplained_mismatch": 0,
+    "unexplained_examples": [],
+    "max_abs_oee_error_on_resolvable_rows": 0.0,
+    "note": "Overlapping states and impossible scrap make the true value unknowable from the data; those rows are flagged EXCEPTION and expected to differ."
+  },
+  "annotation_accuracy": {
+    "stops_requiring_reason": 575,
+    "annotated": 529,
+    "unannotated": 46,
+    "operator_first_annotation_accuracy": 0.8809,
+    "effective_reason_accuracy": 0.9603,
+    "re_annotated_by_engineer": 42
+  },
+  "data_profile": {
+    "machine_shift_kpis": {
+      "availability": {
+        "n": 228,
+        "mean": 0.8544,
+        "p10": 0.7477,
+        "p50": 0.8607,
+        "p90": 0.9478,
+        "min": 0.4968,
+        "max": 1.0
+      },
+      "performance": {
+        "n": 228,
+        "mean": 0.8692,
+        "p10": 0.8279,
+        "p50": 0.8691,
+        "p90": 0.9096,
+        "min": 0.7857,
+        "max": 0.9424
+      },
+      "quality": {
+        "n": 228,
+        "mean": 0.9787,
+        "p10": 0.9668,
+        "p50": 0.9784,
+        "p90": 0.9902,
+        "min": 0.9482,
+        "max": 1.0
+      },
+      "oee": {
+        "n": 228,
+        "mean": 0.7264,
+        "p10": 0.6451,
+        "p50": 0.7298,
+        "p90": 0.8129,
+        "min": 0.4165,
+        "max": 0.879
+      }
+    },
+    "line_oee_mean": {
+      "LINE-01": 0.7325,
+      "LINE-02": 0.7213
+    },
+    "plant_oee_mean_by_shift_code": {
+      "A": 0.7284,
+      "B": 0.7353,
+      "C": 0.7112
+    },
+    "state_time_share": {
+      "CHANGEOVER": 0.0453,
+      "PLANNED_STOP": 0.1739,
+      "RUNNING": 0.7037,
+      "STOPPED": 0.0771
+    },
+    "events_by_state": {
+      "CHANGEOVER": 187,
+      "PLANNED_STOP": 484,
+      "RUNNING": 1591,
+      "STOPPED": 849
+    },
+    "micro_stops": 271,
+    "order_status": {
+      "CANCELLED": 2,
+      "CLOSED_SHORT": 56,
+      "COMPLETED": 97,
+      "IN_PROGRESS": 6,
+      "RELEASED": 6
+    },
+    "inspections_by_type": {
+      "LOT_DISPOSITION": 369,
+      "SAMPLE": 1414
+    },
+    "count_records_by_type": {
+      "MANUAL_CORRECTION": 62,
+      "PLC_READING": 13711
+    },
+    "top_loss_reason_by_machine_shift": {
+      "DR-CO": 101,
+      "DR-MECH": 70,
+      "DR-ELEC": 22,
+      "DR-MAT": 11,
+      "DR-QH": 11,
+      "DR-UNASSIGNED": 9,
+      "DR-OPR": 2
+    },
+    "scheduled_machine_shifts": 228,
+    "clean_machine_shifts": 210
+  }
+}

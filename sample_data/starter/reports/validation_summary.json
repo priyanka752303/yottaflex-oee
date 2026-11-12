@@ -1,0 +1,1384 @@
+{
+  "checks_total": 150,
+  "checks_passed": 150,
+  "checks_failed": 0,
+  "row_counts": {
+    "plant": 1,
+    "line": 2,
+    "machine": 6,
+    "product": 6,
+    "machine_product_standard": 24,
+    "downtime_reason": 12,
+    "shift": 42,
+    "shift_break": 76,
+    "production_order": 167,
+    "production_order_status_event": 647,
+    "state_event": 3111,
+    "downtime_annotation": 571,
+    "production_count": 13773,
+    "quality_inspection": 1783,
+    "oee_aggregate": 378,
+    "oee_exception": 64
+  },
+  "data_exceptions_found": {
+    "COUNT_DECREASE_NO_CORRECTION": 3,
+    "DOWNTIME_OVERLAPS_BREAK": 3,
+    "OVERLAPPING_STATE": 3,
+    "SCRAP_EXCEEDS_TOTAL": 3,
+    "UNANNOTATED_DOWNTIME": 49,
+    "WRONG_IDEAL_CYCLE_TIME": 3
+  },
+  "note": "Data exceptions are expected labelled anomalies; they are detected and treated by the calculator and are not validation failures.",
+  "checks": [
+    {
+      "check": "plant: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "plant: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "plant: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "plant: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 2,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "plant: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 1,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "line: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "line: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "line: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "line: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 2,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "line: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 2,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 48,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 48,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 48,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "product: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 36,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "product: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 36,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "product: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 36,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "product: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "product: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine_product_standard: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 192,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine_product_standard: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 192,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine_product_standard: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 192,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine_product_standard: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 24,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine_product_standard: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 24,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_reason: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 84,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_reason: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 84,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_reason: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 84,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_reason: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_reason: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 42,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 42,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift_break: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 456,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift_break: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 456,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift_break: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 456,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift_break: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 76,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift_break: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 76,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 2171,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 2171,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 2171,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order_status_event: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3882,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order_status_event: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3882,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order_status_event: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3882,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order_status_event: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 647,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order_status_event: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 647,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 31110,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 31110,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 31110,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3426,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3426,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3426,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 571,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 571,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 151503,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 151503,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 151503,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 23179,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 23179,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 23179,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 1783,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 1783,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12096,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12096,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 12096,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_exception: data types",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 768,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_exception: required fields",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 768,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_exception: allowed values",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 768,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_exception: ID / code format",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 64,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_exception: primary key unique",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 64,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "line.plant_id -> plant.plant_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 2,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine.line_id -> line.line_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine_product_standard.machine_id -> machine.machine_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 24,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "machine_product_standard.product_id -> product.product_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 24,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift.plant_id -> plant.plant_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 42,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift_break.shift_id -> shift.shift_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 76,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order.product_id -> product.product_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order.machine_id -> machine.machine_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order.standard_id -> machine_product_standard.standard_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_order_status_event.order_id -> production_order.order_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 647,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event.machine_id -> machine.machine_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event.shift_id -> shift.shift_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event.reason_code -> downtime_reason.reason_code",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event.order_id -> production_order.order_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation.event_id -> state_event.event_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 571,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation.reason_code -> downtime_reason.reason_code",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 571,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "downtime_annotation.supersedes_annotation_id -> downtime_annotation.annotation_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 571,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count.order_id -> production_order.order_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count.machine_id -> machine.machine_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count.shift_id -> shift.shift_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "production_count.corrects_count_id -> production_count.count_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection.order_id -> production_order.order_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 1783,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection.machine_id -> machine.machine_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 1783,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "quality_inspection.shift_id -> shift.shift_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 1783,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate.plant_id -> plant.plant_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate.line_id -> line.line_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate.machine_id -> machine.machine_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate.shift_id -> shift.shift_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_aggregate.top_loss_reason_code -> downtime_reason.reason_code",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_exception.machine_id -> machine.machine_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 64,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "oee_exception.shift_id -> shift.shift_id",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 64,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift: end > start and duration = end - start",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 42,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift calendar contiguous, no overlap",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 42,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "shift_break inside its shift",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 76,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: end > start",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: duration = end - start",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event inside its shift",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event: reason/order presence by state",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "state_event IDs ordered by start time per machine",
+      "category": "STRUCTURE",
+      "status": "PASS",
+      "checked": 6,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "standard: effective_to > effective_from",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 24,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "standard versions do not overlap",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 18,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "standard: product family matches machine's line",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 24,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "order: standard matches machine+product",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "order: standard effective at release",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "order: created <= released <= started <= ended; planned_end > planned_start",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "order lifecycle transitions valid and time-ordered",
+      "category": "LIFECYCLE",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "order current_status = latest status event",
+      "category": "LIFECYCLE",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "every order has lifecycle history",
+      "category": "LIFECYCLE",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "annotation: on a STOPPED event, after it ends, supersedes same event",
+      "category": "LIFECYCLE",
+      "status": "PASS",
+      "checked": 571,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "count: machine = order's machine",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "count: correction points at an earlier reading of the same order and shift",
+      "category": "LIFECYCLE",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "count: reading timestamp inside its shift",
+      "category": "TEMPORAL",
+      "status": "PASS",
+      "checked": 13773,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "inspection: defects_found <= sample_size",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 1783,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "inspection: machine = order's machine",
+      "category": "FOREIGN_KEY",
+      "status": "PASS",
+      "checked": 1783,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "duplicate state events (machine, start, end, state)",
+      "category": "DUPLICATES",
+      "status": "PASS",
+      "checked": 3111,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "duplicate PLC readings (order, ts, counter)",
+      "category": "DUPLICATES",
+      "status": "PASS",
+      "checked": 13711,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "duplicate lot dispositions (order, shift)",
+      "category": "DUPLICATES",
+      "status": "PASS",
+      "checked": 369,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "duplicate annotations (event, ts, reason)",
+      "category": "DUPLICATES",
+      "status": "PASS",
+      "checked": 571,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "aggregate: planned + unplanned + minor + running + gap = shift length",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "aggregate: PPT = shift length - planned stops",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "aggregate: run time = running + minor = PPT - unplanned - gap",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "aggregate: good = total - scrap - rework",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 378,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "aggregate: A, P, Q, OEE recomputed from stored components",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 1512,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "aggregate: availability and quality within [0, 1]",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 756,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "roll-ups equal the sum of their machine-shift components",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 126,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "one machine-shift aggregate per machine x shift",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 252,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "count: increment_qty = counter - previous valid reading",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 13711,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "aggregate total_count = valid increments + corrections",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 252,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "order final status derived from counted quantity",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 167,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    },
+    {
+      "check": "unscheduled shifts: PPT = 0, OEE empty, status NOT_SCHEDULED",
+      "category": "RECONCILIATION",
+      "status": "PASS",
+      "checked": 252,
+      "failures": 0,
+      "sample": [],
+      "note": ""
+    }
+  ]
+}

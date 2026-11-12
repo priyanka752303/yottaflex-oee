@@ -1,0 +1,12 @@
+{"reason_code":"DR-BRK-TEA","description":"Scheduled tea break","category":"PLANNED_STOP","oee_loss_bucket":"NONE","is_planned":true,"requires_annotation":false,"effective_from":"2025-01-01"}
+{"reason_code":"DR-BRK-MEAL","description":"Scheduled meal break","category":"PLANNED_STOP","oee_loss_bucket":"NONE","is_planned":true,"requires_annotation":false,"effective_from":"2025-01-01"}
+{"reason_code":"DR-PM","description":"Preventive maintenance (planned)","category":"PLANNED_STOP","oee_loss_bucket":"NONE","is_planned":true,"requires_annotation":false,"effective_from":"2025-01-01"}
+{"reason_code":"DR-NOSCHED","description":"No production scheduled (plant closed)","category":"PLANNED_STOP","oee_loss_bucket":"NONE","is_planned":true,"requires_annotation":false,"effective_from":"2025-01-01"}
+{"reason_code":"DR-CO","description":"Changeover / setup between orders","category":"SETUP","oee_loss_bucket":"AVAILABILITY","is_planned":false,"requires_annotation":false,"effective_from":"2025-01-01"}
+{"reason_code":"DR-MECH","description":"Mechanical breakdown","category":"UNPLANNED_STOP","oee_loss_bucket":"AVAILABILITY","is_planned":false,"requires_annotation":true,"effective_from":"2025-01-01"}
+{"reason_code":"DR-ELEC","description":"Electrical / control fault","category":"UNPLANNED_STOP","oee_loss_bucket":"AVAILABILITY","is_planned":false,"requires_annotation":true,"effective_from":"2025-01-01"}
+{"reason_code":"DR-MAT","description":"Material shortage / starved","category":"UNPLANNED_STOP","oee_loss_bucket":"AVAILABILITY","is_planned":false,"requires_annotation":true,"effective_from":"2025-01-01"}
+{"reason_code":"DR-QH","description":"Quality hold","category":"UNPLANNED_STOP","oee_loss_bucket":"AVAILABILITY","is_planned":false,"requires_annotation":true,"effective_from":"2025-01-01"}
+{"reason_code":"DR-OPR","description":"No operator available","category":"UNPLANNED_STOP","oee_loss_bucket":"AVAILABILITY","is_planned":false,"requires_annotation":true,"effective_from":"2025-01-01"}
+{"reason_code":"DR-MICRO","description":"Minor stop (< threshold), auto-classified","category":"MINOR_STOP","oee_loss_bucket":"PERFORMANCE","is_planned":false,"requires_annotation":false,"effective_from":"2025-01-01"}
+{"reason_code":"DR-UNASSIGNED","description":"Stop not yet annotated","category":"UNKNOWN","oee_loss_bucket":"AVAILABILITY","is_planned":false,"requires_annotation":true,"effective_from":"2025-01-01"}
