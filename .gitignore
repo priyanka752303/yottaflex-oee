@@ -3,3 +3,9 @@ __pycache__/
 .DS_Store
 # generated datasets (the full dataset is ~300 MB; regenerate with the command in README)
 out/
+
+# local tool settings
+.claude/
+CLAUDE.md
+.vscode/
+.idea/
