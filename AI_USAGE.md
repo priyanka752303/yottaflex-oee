@@ -27,11 +27,23 @@ The AI's output is checked by machine, not just by reading it.
 
 ## What I personally reviewed, changed or validated
 
-<!-- CANDIDATE: fill this in honestly before submitting. For example: which files you read line by line,
-     which rules you questioned or changed, which outputs you checked by hand (e.g. `python -m oee explain`
-     on a machine-shift), and anything you would do differently. Reviewers will ask about it. -->
+<!-- DRAFT: confirm each line is true for you, edit or delete it, and fill the [brackets]. Remove this comment. -->
 
-- _To be completed by the candidate._
+* **Hand-checked one OEE row against its source records.** I ran
+  `python -m oee explain --machine MC-001 --shift SHIFT-2026-01-05-A --out out/starter`
+  and recomputed it by hand:
+  * Planned production time = 28,800 s shift − 2,400 s breaks (TEA 10 min + MEAL 30 min) = 26,400 s.
+  * Run time = 22,147 s running + 46 s micro-stop (under the 120 s threshold, so it stays in run time) = 22,193 s.
+    Unplanned loss = 2,340 + 1,320 s changeovers + 547 s stop = 4,207 s, and 22,193 + 4,207 = 26,400, so time reconciles.
+  * Availability = 22,193 / 26,400 = 0.8406. Performance = ideal run time 19,384.8 / 22,193 = 0.8735.
+    Quality = 241 good / 244 total = 0.9877. OEE = 0.8406 × 0.8735 × 0.9877 = 0.7252, which matches the output.
+* **Reviewed the rule choices in `docs/DESIGN.md`.** [Which ones you agree with, which you questioned, and why.
+  For example: the 120 s micro-stop threshold, counting changeovers as an Availability loss, overlap precedence.]
+* **Read these files:** [for example `oee/calculator.py` and `oee/config.py`].
+* **Ran the checks myself:** the test suite (`python -m unittest discover -s tests`), the starter run and
+  `python -m oee repro`. [Add the full run if you ran it.]
+* **What I would do differently or add with more time:** [your view, for example multi-plant support,
+  line OEE for machines in series, or real time zones with daylight saving].
 
 ## Known limitations of the AI-assisted work
 
